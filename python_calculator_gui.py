@@ -115,7 +115,7 @@ def calculate(operator):
 # -----------------------------
 root = tk.Tk()
 root.title("Python Calculator (Advanced)")
-root.geometry("450x600")
+root.geometry("600x800")
 
 # Input fields
 tk.Label(root, text="Enter first number:").pack()
@@ -154,10 +154,10 @@ tk.Button(root, text="Clear History", command=clear_history).pack(pady=5)
 mem_frame = tk.LabelFrame(root, text="Memory Functions")
 mem_frame.pack(pady=10)
 
-tk.Button(mem_frame, text="M+", width=5, command=lambda: memory_add(float(entry1.get() or 0))).grid(row=0, column=0)
-tk.Button(mem_frame, text="M-", width=5, command=lambda: memory_subtract(float(entry1.get() or 0))).grid(row=0, column=1)
-tk.Button(mem_frame, text="MR", width=5, command=memory_recall).grid(row=0, column=2)
-tk.Button(mem_frame, text="MC", width=5, command=memory_clear).grid(row=0, column=3)
+tk.Button(mem_frame, text="M+", width=10, command=lambda: memory_add(float(entry1.get() or 0))).grid(row=0, column=0)
+tk.Button(mem_frame, text="M-", width=10, command=lambda: memory_subtract(float(entry1.get() or 0))).grid(row=0, column=1)
+tk.Button(mem_frame, text="MR", width=10, command=memory_recall).grid(row=0, column=2)
+tk.Button(mem_frame, text="MC", width=10, command=memory_clear).grid(row=0, column=3)
 
 # Exit button
 tk.Button(root, text="Exit", command=root.destroy).pack(pady=10)
