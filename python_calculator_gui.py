@@ -130,13 +130,13 @@ entry2.pack()
 frame = tk.Frame(root)
 frame.pack(pady=10)
 
-tk.Button(frame, text="+", width=10, command=lambda: calculate("+")).grid(row=0, column=0)
-tk.Button(frame, text="-", width=10, command=lambda: calculate("-")).grid(row=0, column=1)
-tk.Button(frame, text="*", width=10, command=lambda: calculate("*")).grid(row=0, column=2)
-tk.Button(frame, text="/", width=10, command=lambda: calculate("/")).grid(row=0, column=3)
-tk.Button(frame, text="%", width=10, command=lambda: calculate("%")).grid(row=0, column=4)
+tk.Button(frame, text="-", width=10, command=lambda: calculate("-")).grid(row=0, column=0)
+tk.Button(frame, text="+", width=10, command=lambda: calculate("+")).grid(row=0, column=1)
+tk.Button(frame, text="/", width=10, command=lambda: calculate("/")).grid(row=0, column=2)
+tk.Button(frame, text="*", width=10, command=lambda: calculate("*")).grid(row=0, column=3)
+tk.Button(frame, text="^", width=10, command=lambda: calculate("^")).grid(row=0, column=4)
 
-tk.Button(frame, text="^", width=10, command=lambda: calculate("^")).grid(row=1, column=0)
+tk.Button(frame, text="%", width=10, command=lambda: calculate("%")).grid(row=1, column=0)
 tk.Button(frame, text="√", width=10, command=lambda: calculate("√")).grid(row=1, column=1)
 
 # Result display
