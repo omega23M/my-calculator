@@ -115,7 +115,7 @@ def calculate(operator):
 # -----------------------------
 root = tk.Tk()
 root.title("Python Calculator (Advanced)")
-root.geometry("700x900")
+root.geometry("450x600")
 
 # Input fields
 tk.Label(root, text="Enter first number:").pack()
